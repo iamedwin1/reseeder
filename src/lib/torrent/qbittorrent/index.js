@@ -9,7 +9,7 @@ export default function addToClient(torrent, outPath, opts = {}) {
 
   const spawn = spawnSync(`qbittorrent`, args, {
     timeout: 15000,
-    detatched: true,
+    detached: true,
   });
   if (spawn.error) logger.error(`error during add for ${torrent}`);
 }
